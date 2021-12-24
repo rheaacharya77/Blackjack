@@ -35,3 +35,6 @@ function newCard() {
  cards.push(newnextCard);
  renderGame();
 }
+
+
+sum
