@@ -30,11 +30,10 @@ function renderGame() {
 }
 
 function newCard() {
- let newnextCard = 7;
+ let newnextCard = 9;
  sum += newnextCard;
  cards.push(newnextCard);
  renderGame();
 }
 
 
-sum
