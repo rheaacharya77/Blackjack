@@ -9,6 +9,10 @@ let messageEl = document.getElementById('message-el');
 let sumEl = document.getElementById('sum-el');
 let cardsEl = document.getElementById('cards-el');
 
+function getRandomCard(){
+  return 5;
+}
+
 function startGame() {
   renderGame();
 }
@@ -34,7 +38,7 @@ function renderGame() {
 }
 
 function newCard() {
-  let nextCard = 6;
+  let nextCard = getRandomCard();
   sum += nextCard;
   cardArray.push(nextCard);
   renderGame();
