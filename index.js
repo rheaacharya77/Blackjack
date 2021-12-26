@@ -34,7 +34,7 @@ function renderGame() {
 }
 
 function newCard() {
-  let nextCard = 2;
+  let nextCard = 6;
   sum += nextCard;
   cardArray.push(nextCard);
   renderGame();
