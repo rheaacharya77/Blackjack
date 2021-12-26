@@ -9,8 +9,15 @@ let messageEl = document.getElementById('message-el');
 let sumEl = document.getElementById('sum-el');
 let cardsEl = document.getElementById('cards-el');
 
-function getRandomCard(){
-  return 5;
+function getRandomCard() {
+  let randomNumer = Math.floor( Math.random()*13 ) + 1
+  if (randomNumer > 10) {
+      return 10
+  } else if (randomNumer === 1) {
+      return 11
+  } else {
+      return randomNumer
+  }
 }
 
 function startGame() {
@@ -20,7 +27,7 @@ function startGame() {
 function renderGame() {
   cardsEl.textContent = 'Cards: ';
   for (let i = 0; i < cardArray.length; i++) {
-    cardsEl.textContent += cardArray[i] + " ";
+    cardsEl.textContent += cardArray[i] + ' ';
   }
 
   sumEl.textContent = 'Sum:' + sum;
