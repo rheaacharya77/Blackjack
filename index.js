@@ -26,8 +26,8 @@ function startGame() {
   isAlive = true;
   let firstCard = getRandomCard();
   let secondCard = getRandomCard();
-  let cards = [firstCard, secondCard];
-  let sum = firstCard + secondCard;
+  cards = [firstCard, secondCard];
+  sum = firstCard + secondCard;
   renderGame();
 }
 
@@ -58,9 +58,7 @@ function newCard() {
   cards.push(nextCard);
   renderGame();
   }
-  else{
-    message = "You're out of the game!";
-  }
+ 
 }
 
 
