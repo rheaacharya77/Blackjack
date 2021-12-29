@@ -1,5 +1,5 @@
 
 ## Screenshot
 <p align="center">
-<img src="capture.png" width="35%">
+<img src="/capture.png" width="35%">
 </p>
